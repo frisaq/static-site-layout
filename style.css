@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0px;
+    }
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fc85ae;
+    }
+.header {
+    flex: 0 0 0px;    
+    background-color: #9e579d;    
+}
+.navheader{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+
+.flex-container {
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    align-content: stretch;
+    
+    }
+
+
+.flex-item {
+    background-color: #ccf;
+    margin: 2px;
+    
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px; /* or % could be used to ensure a specific layout */
+}
+.logo{
+    display: block;
+    padding: 5px;
+    
+    flex: 0 0 200px;
+
+    
+    background-color: thistle;
+}
+
+.content-body {
+flex: 1 1 auto;
+
+display: flex;
+flex-direction: row;
+background-color: #574b90;
+}
+.content-body .content {
+flex: 1 1 auto;
+padding: 5px;
+overflow: auto;
+background-color: #303a52;
+}
+.content-body .sidenav {
+order: -1;
+flex: 0 0 200px;
+padding: 5px;
+overflow: auto;
+background-color: #21e6c1;
+}
+.content-body .ads {
+flex: 0 0 100px;
+padding: 5px;
+overflow: auto;
+background-color: #278ea5;
+}
+.footer {
+flex: 0 0 50px;
+padding: 5px;
+background-color: #1f4287;
+}
+
